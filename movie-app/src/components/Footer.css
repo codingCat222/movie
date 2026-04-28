@@ -1,0 +1,61 @@
+.landing-footer {
+  background: var(--bg0);
+  border-top: 1px solid var(--border);
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  z-index: 5;
+  position: relative;
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  font-size: 12px;
+  color: var(--txt3);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--txt);
+}
+
+.footer-admin {
+  font-size: 12px;
+  color: var(--gold3);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-admin:hover {
+  color: var(--gold);
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: var(--txt4);
+}
+
+@media (max-width: 768px) {
+  .landing-footer {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

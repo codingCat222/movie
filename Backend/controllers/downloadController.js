@@ -3,7 +3,7 @@ const fs       = require('fs');
 const crypto   = require('crypto');
 const Movie    = require('../models/Movie');
 const User     = require('../models/User');
-const Download = require('../models/Download');
+const Download = require('../models/ddownload');
 
 /* ─────────────────────────────────────────
    Helper – get real client IP

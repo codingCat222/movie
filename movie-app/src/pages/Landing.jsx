@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext.jsx'
 import { movieService } from '../services/movieService.js'
 import Footer from '../components/Footer.jsx'
 import './Landing.css'
+import logo from '../images/logo.jpg' // Add this import
 
 const GENRES = ['Action', 'Drama', 'Comedy', 'Thriller', 'Sci-Fi', 'Horror', 'Romance', 'Mystery']
 
@@ -306,10 +307,11 @@ export default function Landing() {
       />
       <div className="film-grain" />
 
+      {/* Updated Navigation with Logo */}
       <nav className={`landing-nav ${scrolled ? 'scrolled' : ''}`}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none' }}>
           <div className="nav-logo-icon">
-            <i className="fas fa-film" />
+            <img src={logo} alt="Loresstrem Logo" className="nav-logo-img" />
           </div>
           <div>
             <div className="nav-brand-text">LORESSTREM</div>

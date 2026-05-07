@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react'
 import { NavLink, Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext.jsx'
 import './Navbar.css'
+// Import your logo
+import logo from '../images/logo.jpg' 
 
 export default function Navbar() {
   const { user, logout, isPremium } = useAuth()
@@ -56,10 +58,10 @@ export default function Navbar() {
   return (
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-        {/* Logo */}
+        {/* Logo - Updated with image */}
         <Link to={user ? '/home' : '/'} className="nav-logo">
           <div className="nav-logo-icon">
-            <i className="fas fa-film"></i>
+            <img src={logo} alt="Cinemax Logo" className="nav-logo-img" />
           </div>
           <div>
             <div className="nav-logo-text">CINEMAX</div>

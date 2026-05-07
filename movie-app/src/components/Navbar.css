@@ -452,6 +452,7 @@
     border-radius: 12px;
     max-height: 60vh;
     overflow-y: auto;
+    
   }
   
   .btn-sm {
@@ -468,4 +469,34 @@
   .btn-ghost {
     display: none;
   }
+}
+/* Update the existing nav-logo-icon styles */
+.nav-logo-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--gold);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.nav-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* If your logo has transparency and you want to remove the background color */
+.nav-logo-icon:has(.nav-logo-img) {
+  background: transparent;
+  padding: 4px;
+}
+
+/* Alternative: If you want to keep the icon background but have logo centered */
+.nav-logo-icon .nav-logo-img {
+  width: 32px;
+  height: 32px;
 }

@@ -1770,3 +1770,18 @@ body {
   .featured-badges { gap: 16px; }
   .featured-badge { font-size: 10px; letter-spacing: 1px; }
 }
+.nav-logo-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.nav-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

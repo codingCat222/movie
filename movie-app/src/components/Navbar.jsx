@@ -3,7 +3,6 @@ import { NavLink, Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext.jsx'
 import './Navbar.css'
 // Import your logo
-import logo from '../images/logo.jpg' 
 
 export default function Navbar() {
   const { user, logout, isPremium } = useAuth()

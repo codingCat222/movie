@@ -1,4 +1,4 @@
-require('dotenv').config();
+9require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -18,7 +18,7 @@ const limiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 200 });
 app.use(limiter);
 
 app.use(cors({
-  origin: [process.env.CLIENT_URL || 'http://localhost:5175', 'http://localhost:5174'],
+  origin: [process.env.CLIENT_URL || 'http://localhost:5175', 'http://localhost:5174', 'https://movie-beige-nu-99.vercel.app/'],
   credentials: true
 }));
 
